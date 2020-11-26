@@ -31,7 +31,7 @@ public class WebDriverJoom_Test {
         WebElement Confirm = DriverForJoom.findElement(By.xpath("//*[@class='button___3hmfW button___TbaLj fill-brand___18fJk padding-normal___2ctfV rounded___1J8B1']"));
         Confirm.click();
         List<WebElement>  ItemsInBasket = DriverForJoom.findElements(By.xpath("//*[@class='inner___15C_']"));
-        Assert.assertTrue(ItemsInBasket.size() == 0,"The item was delete from basket");
+        Assert.assertTrue(ItemsInBasket.size() == 0,"Basket not empty");
         DriverForJoom.quit();
     }
 }
